@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recipe Sample</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="search-section">
+    <div id="display-recipes"></div>
+    <input id="search-input" type="text" placeholder="Search recipes..." />
+    <select id="diet-select">
+      <option value="">All Diets</option>
+      <option value="vegan">Vegan</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="low-carb">Low Carb</option>
+    </select>
+    <button id="search-button">Search</button>
+    <div id="favorites"></div>
+  </div>
+
+  <div class="recipe-images">
+    <img src="https://bitesofwellness.com/wp-content/uploads/2019/01/Crockpot-Low-Carb-Vegetable-Soup-social1.jpg" alt="Low Carb Recipe">
+    <img src="https://kicking-carbs.com/wp-content/uploads/2020/10/keto-roasted-vegetables-process-3-680x680.jpg" alt="Vegetables">
+    <img src="https://media.post.rvohealth.io/wp-content/uploads/2021/08/tofu-salad-pineapple-quinoa-vegan-meal-1296x728-header-800x728.png" alt="Vegan Recipe">
+    <img src="https://dmiusd4kl5bx2.cloudfront.net/featured/_636x568_crop_center-center_none/iStock-1293479617.jpg" alt="Vegetarian Dish">
+  </div>
+
+  <div id="detail">
+    <h2 id="name"></h2>
+    <img id="image" src="" alt="Recipe Image">
+  </div>
+
+  <form id="new-recipe">
+      <label for="new-name">Name:</label>
+      <input type="text" id="new-name" placeholder="Name" required>
+      
+      <label for="new-image">Image URL:</label>
+      <input type="text" id="new-image" placeholder="Image URL" required>
+      
+      <label for="new-calories">Calories:</label>
+      <input type="text" id="new-calories" placeholder="Calories" required>
+      
+      <label for="new-cholesterol">Cholesterol:</label>
+      <input type="text" id="new-cholesterol" placeholder="Cholesterol" required>
+      
+      <button type="submit">Submit</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
