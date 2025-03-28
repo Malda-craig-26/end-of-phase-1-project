@@ -1,0 +1,7 @@
+# Ignore system files
+.DS_Store
+.vscode/
+node_modules/
+*.log
+*.lock
+.env
